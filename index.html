@@ -1,0 +1,295 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Logo Nav - Start Bootstrap Template</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/logo-nav.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+
+        </head>
+
+        <body style="text-align: center;">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="http://placehold.it/150x50&text=Introduction" alt="">
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#about">ALGORITHMS </a>
+                            </li>
+                            <li>
+                                <a href="#services">Implementation</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Results</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+
+            <!-- Page Content -->
+       <!--  <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Logo Nav by Start Bootstrap</h1>
+                    <p>Note: You may need to adjust some CSS based on the size of your logo. The default logo size is 150x50 pixels.</p>
+                </div>
+            </div>
+        </div> -->
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 style="font-style:normal; font-weight: bold;"><center>MOVIE RECOMMENDATION SYSTEM</center></h3>
+                    <br/>
+                    <p><h4 style="font-style:normal;text-align:justify;">
+					Different people have preferences for a variety of products where each person has an affinity towards a specific product.This affinity between users and products is measured using user-product relationship.  Some products are similar in nature such as books of the same genre, dishes from the same cuisine and this extent of similarity is measured using product-product relationship.Some people are similar is nature because of their age, gender,background and the similarity is measured using user-user relationship.Based on these relationships, we can provide tremendous insights such as recommending similar movies to a specific user (user-product relationship), suggesting an ear phones for a phone(product-product relationship) and suggesting friends to friends on facebook(user-user relationship).Insights can be derived from relationships which can be monetized in the form of recommendations.By knowing the right form of recommendations, we can send personalized promotional emails to the user and can create a personalized home page whenever user visits a web site.</h4></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="row">    
+                        <div class="about" id="about" border="2">
+                            <div>
+                             <h3 style="font-style:normal;font-weight: bold;"><center> MOTIVATION </center></h3>
+                            <h4 style="font-style:normal;text-align:justify;">
+                             Recommender system is very useful for personalization, reducing organizational maintenance, always keeping us up-to-date and suggesting based on real activity. In spite of the emergence of various new forms of entertainment, movies have always been the most prominent and one of the highly preferred forms of entertainment. Everybody loves customization and viewers only want to spend their time and money on something that is close to their taste and something that would get a return on their investment. So, the movie recommender system provides highest possibility for people to like the recommended movies instead of spending their valuable time on searching and watching movies which they wouldn’t like much.  
+                             </h4>
+                             <br/><br/><h3 style="font-style:normal;font-weight: bold;"><center>ALGORITHMS IMPLEMENTED </center></h3>
+                             <br/>
+                             <h4 style="font-style:normal;font-weight: bold;">K NEAREST NEIGHBORS</h4>
+                             <h4 style="font-style:normal;text-align:justify;">
+                               The rating for a movie by a user is estimated by taking the average of ratings of similar users who have already rated that movie.
+							   <ol>
+							   <li>Estimate the rating for unrated movies.
+							   <ul>
+							   <li>Pick k-nearest users for our user and then take the average of the ratings for unrated movies.The average may be a simple average or a weighted average which considers the extent of similarity of each user with our user.</li>
+									<li>Here we used the simple average of ratings given by similar users.</li>
+									<li>The similarity between two users can be measured by taking movies which are seen to both users and comparing the ratings given by both users. If the ratings given by both users on the common movies are almost same, then the two users are very similar.</li>
+									<li>If the users are represented as points in an N-dimensional plane, then the similarity is measured by the distance between them.</li>
+									<li>The distance between two users is measured by hamming distance.It computes how many numbers agree between the two sets of ratings given by both users.</li>
+									
+								</ul>
+								</li>
+							   <li>Sort them in descending order.</li>
+							   <li>Pick the top ten movies for recommendation.</li>
+							   </ol>
+							</h4>
+							</div>
+                        </div>
+
+                        <div>
+                           <p>
+                            <h4 style="font-style:normal;font-weight: bold;">CONTENT BASED FILTERING</h4>
+                            <h4 style="font-style:normal;text-align:justify;">
+                              In content based filtering, we will find movies with similar attributes and suggest it to the user.
+For example, we can suggest the movie “B” to the user who liked movie “A” if both the movies have similar rating against a few same attributes as direction, cast, genre (product attribute similarity).
+<ol><li>Content based filtering requires movie attribute database of the user for whom we would like to recommend movies.</li>
+<li>The attributes are to be picked based on their impact on the user preferences.</li>
+<li>Each movie is shown as a point in an N-dimensional space and the similarity is measured based on the distance between the two points.</li>
+<li>Movies are recommended based on their distance from the rated movies by the user.</li><ol>
+
+                            </h4>
+                        </p>
+                    </div>
+                    <div>
+                       <p>
+                        <h4 style="font-style:normal;font-weight: bold;">NAIVE BAYES </h4>
+                        <h4 style="font-style:normal;text-align:justify;">
+
+                        Naive Bayes classifier is a powerful and straightforward algorithm for the classification task.
+This classifier gives great results when used for textual data analysis. 
+The naive bayes classifier technique is a conditional probability model based on Bayesian theorem with strong independence assumptions between the features.
+
+                     </h4>
+                 </p>
+             </div>
+
+             <p>
+                <h4 style="font-weight: bold;">  </h4>
+            </p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="services" id="services">
+
+            <h1></h1>
+        </div>
+    </div>
+    <div class="row">
+
+
+        <div>
+            <h3 style="font-style:normal;font-weight: bold;text-align:justify;"><center>CHALLENGES </center></h3>
+			 <h4 style="font-style:normal;text-align:justify;">
+             K Nearest Neighbors: 
+			 <ul>
+			 <li>K value cannot be choosen randomly.The accuracy of the recommendation system depends on the K value hence it should be choosen carefully.As tested,a large K value is more precise as it reduces the overall noise, k value is choosen as 50.
+			</li>
+			 <li>There are differnt metrics to calculate distance between two users to know the similarity between them.The different metrics are euclidean,correlation and hamming distance.Choosing the distance metric is also a challenge
+			 as the accuracy changes based on the distance metrics.We calculated the distance using all the distance metrics and found that euclidean distance gives more accurate results.
+			 </li>
+			 </ul>
+			 </h4>
+           
+        </div>
+       
+        <h3 style="font-style:normal;font-weight: bold;"><center>IMPLEMENTATION </center></h3>
+        <div id="implementation">
+         <h4 style="font-style:normal;font-weight: bold;text-align: left !important;">K Nearest Neighbors</h4>
+		 <h4 style="font-style:normal;text-align:justify;">
+		<ol>
+		<li>Read the user,movies and ratings data.</li>
+		<li>Calculate the number of users and movies to build a matrix.</li>
+		<li>Populate the matrix(rows represent users and columns represent movies) with rating values.</li>
+		<li>Construct a distance matrix which contains distances from each user to all other users.The distance is calculated using euclidean distance function(euclidean fn is imported from scipy.spatial.distance library).</li>
+		<li>Calculate the top 100 users similar to the user for whom movies are being recommended.</li>
+		<li>Calculate the mean movie scores for all the movies rated by the top 100 similar users.</li>
+		<li>Sort the mean movie scores and take their movie indexes.</li>
+		<li>Remove the movies seen by the current user from the sorted set.</li>
+		<li>Print top 20 movies recommended to the current user.</li>
+		</ol>
+		</h4>
+		
+		<h4 style="font-style:normal;font-weight: bold;text-align: left !important;">NAIVE BAYES</h4>
+		<h4 style="font-style:normal;text-align:justify;">
+		<ol>
+		
+		<li>Read the training,test,movie data.</li>
+		<li>Group the training data based on user and separate the user_ids,movie_ids,ratings.The same step is done with the testing data.</li>
+		<li>Find the maximum user and movie indices in training data and build a matrix of that size and populate the ratings in it.</li>
+		<li>The ratings are populated in the matrix such that any rating>=3 is given a value of 1 and any rating<=3 is given -1 </li>
+		<li>Calculate the total number of ratings by counting the number of ones and minus ones in the matrix and adding them.</li>
+		<li>A function naive_bayes_classifier is defined where a matrix containing probabilities for the each position of the rating matrix is built.</li>
+		<li>Compare the predicted probability matrix to the test probability matrix to calculate accuracy.</li>
+		<li>Recommend top 25 movies.</li>
+		<li>Run the job using the following command
+spark-submit naivebayes_scratch.py <.base filepath> <.test filepath> <.item filepath></li>
+		</ol>
+		
+		 
+		</h4>
+		
+		<div><img src="images/NaiveBayesFormula.png" style="max-height: 50%; max-width: 100%"/></div>
+		
+		<h4 style="font-style:normal;font-weight: bold;text-align: left !important;">Content Based</h4>
+		<h4 style="font-style:normal;text-align:justify;">
+		<ol>
+		<li>Choose the genres from the top rated movies of the user</li>
+		<li>Average of the ratings given by other users is calculated for each movie of that genre.</li>
+		<li>Top 20 movies of that genre are recommended to that user.</li>
+		</ol>
+		</h4>
+         <div>
+				<h3 style="font-style:italic;font-weight: bold;"><br/><br/><br/><br/><center> RESULTS </center></h3>
+				<h4 style="font-style:normal;font-weight: bold;text-align: center !important;">KNN</h4>
+                <div> <img src="images/KNN1.png" style="max-height: 50%; max-width: 100%"/></div><br/>
+				<h4 style="font-style:normal;font-weight: bold;text-align: center !important;">Content Based</h4>
+                <div> <img src="images/ContentBased.png" style="max-height: 50%; max-width: 100%"/></div><br/>
+				<h4 style="font-style:normal;font-weight: bold;text-align: center !important;">Naive Bayes</h4>
+                <div> <img src="images/NaiveBayes.png" style="max-height: 50%; max-width: 100%"/></div><br/>
+         </div> 
+
+
+                <br><br>
+                <h4 style="font-style:normal;font-weight: bold;"> OUR TEAM </h4>
+                <h4 style="font-style:normal;">
+				   SUNISHA CHALASANI ( # 800962445 ) &nbsp  &nbsp  &nbsp  &nbsp    DHENUKA BHARGAVI RANGAM ( # 800963261 ) 
+                   &nbsp  &nbsp  &nbsp  &nbsp  
+                   VARSHINI KODEM ( # 800966826 )
+                  </h4>
+		<h4 style="font-style:normal;font-weight: bold;text-align: left !important;">Tasks accomplished</h4>
+		<h4 style="font-style:normal;text-align:justify;">		
+		<ol>
+		<li>Definitely accomplished: KNN to find the top movie recommendations for a user.</li>
+		<li>Likely Accomplished:Implemented Content based filtering and the accuracy was tested with KNN,Naive Bayes implementation and found to be around 80%(Naive Bayes).</li>
+		<li>Ideally Accomplished: Implemented Naive Bayes algorithm for recommending.</li>
+		</ol>
+		</h4>
+				  
+                   <h4 style="font-style:normal;font-weight: bold;"> DATA SET </h4>
+
+                   Data Set: Movielens data set is the focus.
+
+                   <a href="http://grouplens.org/datasets/movielens/100k/">                  http://grouplens.org/datasets/movielens/100k/ </a> 
+		
+		<h4 style="font-style:normal;font-weight: bold;text-align: left !important;">About the data</h4>
+		<h4 style="font-style:normal;text-align:justify;">		
+		<ol>
+		<li>Dataset contains 100k records of rated movies provided by the movielens organisation.</li>
+		<li>The u.data data contains user_id,movie_id,rating,timestamp respectively for each row.</li>
+		<li>The u.item contains user_id,movie_name,date released,imdb link,genre respectively for each movie.</li>
+		<li>The u.user contains user_id,age,gender,profession,genre,zipcode respectively for each user.</li>
+		</ol>
+		</h4>
+				
+				   
+			<h3 style="font-style:italic;font-weight: bold;"><br/><br/><br/><br/><center> Input data </center></h3>
+				<h4 style="font-style:normal;font-weight: bold;text-align: center !important;">User Movie file</h4>
+                <div> <img src="images/u1base.png" style="max-height: 50%; max-width: 100%"/></div><br/>
+				<h4 style="font-style:normal;font-weight: bold;text-align: center !important;">Movies file</h4>
+                <div> <img src="images/uitem.png" style="max-height: 50%; max-width: 100%"/></div><br/>
+				<h4 style="font-style:normal;font-weight: bold;text-align: center !important;">User file</h4>
+                <div> <img src="images/user.png" style="max-height: 50%; max-width: 100%"/></div><br/>
+                   
+
+           </h4>
+       </div>
+   </div>
+
+
+</div>
+
+
+
+
+
+<!-- /.container -->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
